@@ -1,0 +1,14 @@
+{
+  "name": "HEGEMON",
+  "short_name": "HEGEMON",
+  "description": "Территория мужского комфорта",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#081519",
+  "theme_color": "#081519",
+  "lang": "ru",
+  "icons": [
+    { "src": "/hegemon-app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
