@@ -1,13 +1,31 @@
+﻿import { useState } from 'react';
+import { FaqSection } from '../components/FaqSection';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
+import { Principles } from '../components/Principles';
+import { Services } from '../components/Services';
+import { VisitSteps } from '../components/VisitSteps';
+
 export function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <main className="container">
-      <section className="hello">
-        <h1>Привет! 🚀</h1>
-        <p>Это твой проект. Пока тут пусто — самое интересное впереди.</p>
-        <p className="hello__hint">
-          Открой Codex и опиши свою идею — этот экран станет твоим приложением.
-        </p>
-      </section>
-    </main>
+    <div className="site-shell">
+      <Header open={menuOpen} onToggle={() => setMenuOpen((value) => !value)} />
+      <main>
+        <Hero /><Principles /><Services /><VisitSteps /><FaqSection />
+        <section className="final-cta" id="booking">
+          <div className="section-wrap final-cta__inner">
+            <span className="eyebrow">ПЕРВЫЙ ВИЗИТ</span>
+            <h2>Позаботьтесь о себе.<br /><em>Без лишних слов.</em></h2>
+            <p>Выберите процедуру — детали спокойно обсудим перед началом.</p>
+            <a className="button button--light" href="https://wa.me/?text=Здравствуйте!%20Хочу%20записаться%20в%20HEGEMON" target="_blank" rel="noreferrer">
+              Записаться в HEGEMON <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <Footer /><a className="mobile-book" href="#booking">Записаться</a>
+    </div>
   );
 }
