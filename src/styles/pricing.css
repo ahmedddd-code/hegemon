@@ -29,9 +29,10 @@
 }
 @media (max-width:580px) {
   .pricing { padding-block:70px; }
-  .pricing__tabs { width:100%; }
+  .pricing__tabs { position:sticky; z-index:4; top:82px; width:100%; background:#071113; box-shadow:0 8px 20px rgba(0,0,0,.24); }
   .pricing__tabs button { flex:1; padding:12px 8px; font-size:9px; }
   .pricing__zones>div { min-height:50px; }
+  .pricing__zones span { max-width:72%; line-height:1.35; }
   .pricing__zones i { width:30px; }
   .pricing__sets article { grid-template-columns:32px 1fr; }
   .pricing__sets article>strong { grid-column:2; margin-top:8px; }
