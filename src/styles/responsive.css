@@ -40,7 +40,7 @@
 @media (max-width:580px) {
   .section-wrap { width:calc(100% - 36px); }
   .brand strong { font-size:15px; }
-  .brand>i { width:28px; height:31px; }
+  .brand>img { width:36px; height:36px; }
   h2 { font-size:41px; }
   .hero { height:100svh; min-height:690px; background-position:66% center; }
   .hero::before { background:linear-gradient(90deg,rgba(5,9,10,.97),rgba(5,9,10,.68) 58%,rgba(5,9,10,.2)),linear-gradient(0deg,rgba(4,9,10,.82),transparent 48%); }
