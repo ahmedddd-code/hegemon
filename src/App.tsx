@@ -1,4 +1,4 @@
-import { Route, Switch } from 'wouter';
+import { Route, Switch, useLocation } from 'wouter';
 import { AboutPage } from './pages/AboutPage';
 import { FaqPage } from './pages/FaqPage';
 import { HomePage } from './pages/HomePage';
@@ -9,8 +9,9 @@ import { VisitPage } from './pages/VisitPage';
 import { ScrollToTop } from './components/ScrollToTop';
 
 export default function App() {
+  const [location] = useLocation();
   return (
-    <><ScrollToTop /><Switch>
+    <><ScrollToTop /><div className="route-transition" key={location}><Switch>
         <Route path="/" component={HomePage} />
         <Route path="/services" component={ServicesPage} />
         <Route path="/prices" component={PricesPage} />
@@ -18,6 +19,6 @@ export default function App() {
         <Route path="/visit" component={VisitPage} />
         <Route path="/faq" component={FaqPage} />
         <Route component={NotFoundPage} />
-      </Switch></>
+      </Switch></div></>
   );
 }

@@ -1,6 +1,14 @@
 .topbar--inner { position:sticky; top:0; height:78px; background:rgba(7,17,19,.97); border-bottom-color:rgba(255,255,255,.1); backdrop-filter:blur(16px); }
 .topbar__home { padding:10px 0; border-bottom:1px solid rgba(255,255,255,.3); color:rgba(255,255,255,.72); font-size:10px; letter-spacing:.08em; transition:.2s ease; }
 .topbar__home:hover { color:var(--gold); border-color:var(--gold); }
+.page-toolbar { position:sticky; z-index:18; top:78px; border-bottom:1px solid var(--line); background:rgba(242,239,233,.9); backdrop-filter:blur(16px); }
+.page-toolbar__inner { width:min(1280px,calc(100% - 88px)); height:52px; margin-inline:auto; display:flex; align-items:center; gap:18px; }
+.back-button,.page-toolbar__home { min-height:36px; display:inline-flex; align-items:center; gap:8px; border:0; background:transparent; color:#3f4443; font-size:11px; font-weight:600; letter-spacing:.06em; cursor:pointer; transition:color .2s ease,transform .2s ease; }
+.back-button:hover,.page-toolbar__home:hover { color:var(--gold-dark); }
+.back-button:hover { transform:translateX(-2px); }
+.page-toolbar__title { color:#858681; font-size:9px; letter-spacing:.16em; text-transform:uppercase; }
+.page-toolbar__home { margin-left:auto; }
+.page-toolbar__home span { font-size:17px; line-height:1; }
 .inner-page { background:var(--paper); }
 .page-intro { position:relative; min-height:430px; display:flex; align-items:center; overflow:hidden; color:#fff; background:#091517; }
 .page-intro::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,rgba(6,13,14,.98),rgba(6,13,14,.78)),url('/images/hegemon-hero-man.png') 90% 42%/55% auto no-repeat; }
@@ -17,12 +25,18 @@
 .not-found p { margin-bottom:30px; color:var(--muted); font-size:13px; }
 @media (max-width:1020px) {
   .topbar--inner { height:74px; }
+  .page-toolbar { top:74px; }
+  .page-toolbar__inner { width:min(100% - 40px,760px); }
   .page-intro { min-height:380px; }
   .page-intro::before { background:linear-gradient(90deg,rgba(6,13,14,.98),rgba(6,13,14,.7)),url('/images/hegemon-hero-man.png') 80% 40%/auto 120% no-repeat; }
 }
 @media (max-width:580px) {
   .topbar__home { margin-left:auto; margin-right:8px; font-size:9px; }
   .topbar--inner .menu-button { margin-left:0; }
+  .page-toolbar__inner { width:calc(100% - 28px); height:48px; gap:10px; }
+  .back-button,.page-toolbar__home { min-width:82px; min-height:40px; font-size:10px; }
+  .page-toolbar__title { flex:1; overflow:hidden; text-align:center; text-overflow:ellipsis; white-space:nowrap; }
+  .page-toolbar__home { min-width:auto; justify-content:flex-end; }
   .page-intro { min-height:350px; }
   .page-intro::before { background:linear-gradient(90deg,rgba(6,13,14,.98),rgba(6,13,14,.72)),url('/images/hegemon-hero-man.png') 70% 45%/auto 105% no-repeat; }
   .page-intro .section-wrap { padding-block:55px; }
