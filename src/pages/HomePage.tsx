@@ -3,8 +3,12 @@ import { FaqSection } from '../components/FaqSection';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
+import { HygieneSection } from '../components/HygieneSection';
+import { PricingSection } from '../components/PricingSection';
 import { Principles } from '../components/Principles';
 import { Services } from '../components/Services';
+import { Testimonials } from '../components/Testimonials';
+import { TrustStrip } from '../components/TrustStrip';
 import { VisitSteps } from '../components/VisitSteps';
 
 export function HomePage() {
@@ -13,7 +17,15 @@ export function HomePage() {
     <div className="site-shell">
       <Header open={menuOpen} onToggle={() => setMenuOpen((value) => !value)} />
       <main>
-        <Hero /><Principles /><Services /><VisitSteps /><FaqSection />
+        <Hero />
+        <Principles />
+        <Services />
+        <PricingSection />
+        <HygieneSection />
+        <TrustStrip />
+        <Testimonials />
+        <VisitSteps />
+        <FaqSection />
         <section className="final-cta" id="booking">
           <div className="section-wrap final-cta__inner">
             <span className="eyebrow">ПЕРВЫЙ ВИЗИТ</span>
