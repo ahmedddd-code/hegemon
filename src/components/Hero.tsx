@@ -1,4 +1,6 @@
-﻿export function Hero() {
+import { Link } from 'wouter';
+
+export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero__shade" />
@@ -9,12 +11,12 @@
           <p>Деликатный уход за мужским телом в приватной и спокойной обстановке.</p>
           <div className="hero__actions">
             <a className="button" href="#booking">Записаться <span>↗</span></a>
-            <a className="text-link" href="#services">Выбрать услугу <span>↓</span></a>
+            <Link className="text-link" href="/services">Выбрать услугу <span>→</span></Link>
           </div>
         </div>
         <div className="hero__note"><span>ПРИВАТНЫЙ ФОРМАТ</span><p>Только для мужчин<br />Специалисты-мужчины<br />Строго конфиденциально</p></div>
       </div>
-      <div className="hero__services"><span><b>01</b> Лазерная эпиляция</span><span><b>02</b> Трон Кегеля</span><span><b>03</b> Мужская гигиена</span></div>
+      <div className="hero__services"><span><b>01</b> Лазерная эпиляция</span><span><b>02</b> Удаление папиллом</span><span><b>03</b> Трон Кегеля</span></div>
     </section>
   );
 }
