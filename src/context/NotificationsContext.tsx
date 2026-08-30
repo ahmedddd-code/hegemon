@@ -22,7 +22,8 @@ export function NotificationsProvider({ children }: { children: React.ReactNode 
     } else {
       try {
         const stored = localStorage.getItem(KEY);
-        const next = stored ? JSON.parse(stored) as NotificationItem[] : [welcome];
+        const parsed: unknown = stored ? JSON.parse(stored) : [welcome];
+        const next = Array.isArray(parsed) ? parsed as NotificationItem[] : [welcome];
         setItems(next);
         if (!stored) localStorage.setItem(KEY, JSON.stringify(next));
       } catch { setItems([]); }

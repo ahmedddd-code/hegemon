@@ -8,7 +8,10 @@ const KEY = 'hegemon-recent-views';
 const EVENT = 'hegemon:recent-views';
 
 export function readRecentViews(): RecentView[] {
-  try { return JSON.parse(localStorage.getItem(KEY) ?? '[]') as RecentView[]; }
+  try {
+    const stored: unknown = JSON.parse(localStorage.getItem(KEY) ?? '[]');
+    return Array.isArray(stored) ? stored as RecentView[] : [];
+  }
   catch { return []; }
 }
 
