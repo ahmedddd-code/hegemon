@@ -16,10 +16,10 @@
 .founder-story__copy>p+p { margin-top:25px; }
 .founder-story__copy .founder-story__lead { color:var(--ink); font-weight:600; }
 .founder-story__copy .founder-story__origin { padding:25px 0 25px 24px; border-left:1px solid var(--gold-dark); color:var(--ink); font:clamp(21px,2vw,29px)/1.5 'Prata',serif; }
-.founder-story__copy .founder-story__origin strong { font-weight:400; }
+.founder-story__copy .founder-story__origin strong { font-family:'Manrope',sans-serif; font-weight:600; }
 .founder-story__copy footer { margin-top:46px; padding-top:24px; display:flex; align-items:flex-end; flex-direction:column; gap:7px; border-top:1px solid var(--line); text-align:right; }
 .founder-story__copy footer strong { color:var(--ink); font:600 clamp(18px,1.5vw,22px) 'Manrope',sans-serif; }
-.founder-story__copy footer em { color:#353938; font:italic 600 clamp(15px,1.2vw,18px)/1.5 'Manrope',sans-serif; letter-spacing:0; text-transform:none; }
+.founder-story__copy footer span { color:#353938; font:600 clamp(15px,1.2vw,18px)/1.5 'Manrope',sans-serif; letter-spacing:0; }
 .hygiene { position:relative; min-height:690px; display:flex; align-items:center; color:#fff; background:#071315 url('/images/hegemon-hero-man.png') 88% center/auto 115% no-repeat; }
 .hygiene::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#071315 0%,#071315 46%,rgba(7,19,21,.72) 67%,rgba(7,19,21,.12)); }
 .hygiene__content { position:relative; z-index:1; display:grid; grid-template-columns:1.05fr .65fr; gap:7%; align-items:end; }
