@@ -14,10 +14,12 @@
 .founder-story__copy { max-width:760px; }
 .founder-story__copy>p { color:#4f5351; font-size:clamp(15px,1.3vw,18px); line-height:1.85; }
 .founder-story__copy>p+p { margin-top:25px; }
-.founder-story__copy>p:nth-child(4) { padding:25px 0 25px 24px; border-left:1px solid var(--gold-dark); color:var(--ink); font:clamp(21px,2vw,29px)/1.5 'Prata',serif; }
-.founder-story__copy footer { margin-top:46px; padding-top:24px; display:flex; align-items:end; justify-content:space-between; gap:25px; border-top:1px solid var(--line); }
-.founder-story__copy footer span { color:var(--muted); font-size:10px; letter-spacing:.15em; text-transform:uppercase; }
-.founder-story__copy footer strong { font:18px 'Prata',serif; letter-spacing:.14em; }
+.founder-story__copy .founder-story__lead { color:var(--ink); font-weight:600; }
+.founder-story__copy .founder-story__origin { padding:25px 0 25px 24px; border-left:1px solid var(--gold-dark); color:var(--ink); font:clamp(21px,2vw,29px)/1.5 'Prata',serif; }
+.founder-story__copy .founder-story__origin strong { font-weight:400; }
+.founder-story__copy footer { margin-top:46px; padding-top:24px; display:flex; align-items:flex-end; flex-direction:column; gap:7px; border-top:1px solid var(--line); text-align:right; }
+.founder-story__copy footer strong { color:var(--ink); font:20px 'Prata',serif; }
+.founder-story__copy footer em { color:var(--gold-dark); font-size:10px; letter-spacing:.14em; text-transform:uppercase; }
 .hygiene { position:relative; min-height:690px; display:flex; align-items:center; color:#fff; background:#071315 url('/images/hegemon-hero-man.png') 88% center/auto 115% no-repeat; }
 .hygiene::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#071315 0%,#071315 46%,rgba(7,19,21,.72) 67%,rgba(7,19,21,.12)); }
 .hygiene__content { position:relative; z-index:1; display:grid; grid-template-columns:1.05fr .65fr; gap:7%; align-items:end; }
@@ -55,7 +57,7 @@
   .founder-story h2 { margin-top:24px; font-size:42px; }
   .founder-story__copy>p { font-size:14px; line-height:1.75; }
   .founder-story__copy>p+p { margin-top:20px; }
-  .founder-story__copy>p:nth-child(4) { padding:20px 0 20px 18px; font-size:21px; }
+  .founder-story__copy .founder-story__origin { padding:20px 0 20px 18px; font-size:21px; }
   .hygiene { padding-block:75px; background-position:67% bottom; background-size:auto 82%; }
   .hygiene::before { background:linear-gradient(180deg,#071315 0%,#071315 53%,rgba(7,19,21,.68) 78%,rgba(7,19,21,.25)); }
   .hygiene__copy>p { font-size:13px; }
