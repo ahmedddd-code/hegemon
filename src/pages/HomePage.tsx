@@ -5,6 +5,7 @@ import { Hero } from '../components/Hero';
 import { HomeNavigation } from '../components/HomeNavigation';
 import { TrustStrip } from '../components/TrustStrip';
 import { RecentlyViewed } from '../components/RecentlyViewed';
+import { WHATSAPP_BOOKING_URL } from '../lib/contact';
 
 export function HomePage() {
   return (
@@ -13,7 +14,7 @@ export function HomePage() {
       <main>
         <Hero /><HomeNavigation /><RecentlyViewed/><TrustStrip /><BookingCta />
       </main>
-      <Footer /><a className="mobile-book" href="#booking">Записаться</a>
+      <Footer /><a className="mobile-book" href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer">Записаться</a>
     </div>
   );
 }

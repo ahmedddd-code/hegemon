@@ -1,3 +1,5 @@
+import { WHATSAPP_BOOKING_URL } from '../lib/contact';
+
 export function BookingCta() {
   return (
     <section className="final-cta" id="booking">
@@ -5,7 +7,7 @@ export function BookingCta() {
         <span className="eyebrow">ПЕРВЫЙ ВИЗИТ</span>
         <h2>Позаботьтесь о себе.<br /><em>Без лишних слов.</em></h2>
         <p>Выберите процедуру — детали спокойно обсудим перед началом.</p>
-        <a className="button button--light" href="https://wa.me/?text=Здравствуйте!%20Хочу%20записаться%20в%20HEGEMON" target="_blank" rel="noreferrer">Записаться в HEGEMON <span aria-hidden="true">↗</span></a>
+        <a className="button button--light" href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer">Записаться в HEGEMON <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   );

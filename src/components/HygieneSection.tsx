@@ -4,6 +4,8 @@ const benefits = [
   ['03', 'Ухоженное тело', 'Внимание к себе без лишней демонстративности.'],
 ];
 
+import { WHATSAPP_BOOKING_URL } from '../lib/contact';
+
 export function HygieneSection() {
   return (
     <section className="hygiene" id="hygiene">
@@ -12,7 +14,7 @@ export function HygieneSection() {
           <span className="eyebrow">БОЛЬШЕ, ЧЕМ ПРОЦЕДУРА</span>
           <h2>Интимная гигиена —<br /><em>часть мужского ухода.</em></h2>
           <p>Так же естественно, как стрижка или уход за бородой. В HEGEMON для этого есть спокойная атмосфера, мужские специалисты и полная приватность.</p>
-          <a className="text-link" href="#booking">Выбрать процедуру <span>↗</span></a>
+          <a className="text-link" href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer">Выбрать процедуру <span>↗</span></a>
         </div>
         <div className="hygiene__benefits">
           {benefits.map(([number, title, text]) => <article key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></article>)}

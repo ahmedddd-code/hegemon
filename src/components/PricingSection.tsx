@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { WHATSAPP_BOOKING_URL } from '../lib/contact';
 
 const zones = [
   ['Усы', '4 500 ₸'], ['Борода (контур)', '4 500 ₸'], ['Виски', '4 500 ₸'], ['Щёки', '4 500 ₸'],
@@ -36,7 +37,7 @@ export function PricingSection() {
         ) : (
           <div className="pricing__sets">{sets.map(([name, description, price], index) => <article key={name}><span>0{index + 1}</span><div><h3>{name}</h3><p>{description}</p></div><strong>{price}</strong></article>)}</div>
         )}
-        <div className="pricing__gift"><span>✦</span><p><strong>2 мини-зоны в подарок</strong><small>{tab === 'zones' ? 'при курсе от 6 процедур' : 'при выборе 6-го сета'}</small></p><a href="#booking">Записаться <b>↗</b></a></div>
+        <div className="pricing__gift"><span>✦</span><p><strong>2 мини-зоны в подарок</strong><small>{tab === 'zones' ? 'при курсе от 6 процедур' : 'при выборе 6-го сета'}</small></p><a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer">Записаться <b>↗</b></a></div>
       </div>
     </section>
   );

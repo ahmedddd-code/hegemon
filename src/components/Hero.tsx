@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import { WHATSAPP_BOOKING_URL } from '../lib/contact';
 
 export function Hero() {
   return (
@@ -10,7 +11,7 @@ export function Hero() {
           <h1>Мужская гигиена.<br /><em>Комфорт.</em><br />Уверенность.</h1>
           <p>Деликатный уход за мужским телом в приватной и спокойной обстановке.</p>
           <div className="hero__actions">
-            <a className="button" href="#booking">Записаться <span>↗</span></a>
+            <a className="button" href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer">Записаться <span>↗</span></a>
             <Link className="text-link" href="/services">Выбрать услугу <span>→</span></Link>
           </div>
         </div>

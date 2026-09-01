@@ -1,3 +1,5 @@
+import { WHATSAPP_BOOKING_URL } from '../lib/contact';
+
 const services = [
   { number: '01', title: ['Лазерная', 'эпиляция'], subtitle: 'Гладкость • комфорт • уход', description: 'Меньше бритья, раздражения и ежедневной рутины: лицо, тело и интимные зоны.', price: 'от 4 500 ₸', className: 'service--laser' },
   { number: '02', title: ['Удаление', 'папиллом'], subtitle: 'Деликатно • после осмотра', description: 'Специалист предварительно оценит образование и объяснит, возможна ли процедура в центре.', price: 'После осмотра', className: 'service--papilloma' },
@@ -12,7 +14,7 @@ export function Services() {
           <span className="service__number">{service.number}</span>
           <div className="service__body"><p>{service.subtitle}</p><h3>{service.title.map((line) => <span key={line}>{line}</span>)}</h3></div>
           <p className="service__description">{service.description}</p>
-          <a href="#booking"><strong>{service.price}</strong><span aria-hidden="true">↗</span></a>
+          <a href={WHATSAPP_BOOKING_URL} target="_blank" rel="noreferrer"><strong>{service.price}</strong><span aria-hidden="true">↗</span></a>
         </article>
       ))}</div>
       <p className="services__medical">Перед процедурами специалист расскажет о противопоказаниях. Кожные образования удаляются только после предварительной оценки.</p>
