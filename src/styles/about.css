@@ -17,6 +17,18 @@
 .founder-story__copy footer { margin-top:46px; padding-top:24px; display:flex; align-items:end; justify-content:space-between; gap:25px; border-top:1px solid var(--line); }
 .founder-story__copy footer span { color:var(--muted); font-size:10px; letter-spacing:.15em; text-transform:uppercase; }
 .founder-story__copy footer strong { font:18px 'Prata',serif; letter-spacing:.14em; }
+.hygiene { position:relative; min-height:690px; display:flex; align-items:center; color:#fff; background:#071315 url('/images/hegemon-hero-man.png') 88% center/auto 115% no-repeat; }
+.hygiene::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#071315 0%,#071315 46%,rgba(7,19,21,.72) 67%,rgba(7,19,21,.12)); }
+.hygiene__content { position:relative; z-index:1; display:grid; grid-template-columns:1.05fr .65fr; gap:7%; align-items:end; }
+.hygiene__copy h2 { max-width:760px; margin:25px 0 28px; }
+.hygiene__copy>p { max-width:590px; color:rgba(255,255,255,.58); font-size:14px; line-height:1.8; }
+.hygiene__copy .text-link { margin-top:30px; color:var(--gold); }
+.hygiene__benefits { padding:12px 0 12px 34px; border-left:1px solid rgba(255,255,255,.2); }
+.hygiene__benefits article { display:flex; gap:24px; padding:22px 0; border-bottom:1px solid rgba(255,255,255,.14); }
+.hygiene__benefits article:last-child { border-bottom:0; }
+.hygiene__benefits>article>span { color:var(--gold); font-size:9px; letter-spacing:.15em; }
+.hygiene__benefits h3 { margin-bottom:8px; font-size:15px; }
+.hygiene__benefits p { max-width:260px; color:rgba(255,255,255,.5); font-size:11px; line-height:1.6; }
 .brand-philosophy { position:relative; padding-block:clamp(100px,13vw,190px); overflow:hidden; background:var(--navy); color:#fff; text-align:center; }
 .brand-philosophy::before { content:'HEGEMON'; position:absolute; left:50%; bottom:-8%; transform:translateX(-50%); color:rgba(255,255,255,.025); font:18vw 'Prata',serif; letter-spacing:.08em; }
 .brand-philosophy .section-wrap { position:relative; z-index:1; }
@@ -30,6 +42,10 @@
   .about-overview__copy { max-width:none; }
   .founder-story header { position:static; }
   .founder-story__copy { max-width:none; }
+  .hygiene { min-height:0; padding-block:85px; background-position:80% bottom; }
+  .hygiene__content { grid-template-columns:1fr; }
+  .hygiene__copy { max-width:650px; }
+  .hygiene__benefits { max-width:560px; margin-top:45px; padding:8px 20px; border:1px solid rgba(255,255,255,.15); background:rgba(7,19,21,.8); backdrop-filter:blur(8px); }
 }
 
 @media (max-width:580px) {
@@ -45,6 +61,10 @@
   .founder-story__copy>p { font-size:14px; line-height:1.75; }
   .founder-story__copy>p+p { margin-top:20px; }
   .founder-story__copy>p:nth-child(4) { padding:20px 0 20px 18px; font-size:21px; }
+  .hygiene { padding-block:75px; background-position:67% bottom; background-size:auto 82%; }
+  .hygiene::before { background:linear-gradient(180deg,#071315 0%,#071315 53%,rgba(7,19,21,.68) 78%,rgba(7,19,21,.25)); }
+  .hygiene__copy>p { font-size:13px; }
+  .hygiene__benefits { margin-top:38px; }
   .brand-philosophy { padding-block:100px; }
   .brand-philosophy h2 { font-size:clamp(42px,12vw,58px); }
 }

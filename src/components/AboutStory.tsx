@@ -32,12 +32,17 @@ export function AboutStory() {
         </div>
       </section>
 
-      <section className="brand-philosophy">
-        <div className="section-wrap">
-          <span className="eyebrow">ФИЛОСОФИЯ БРЕНДА</span>
-          <h2>Забота о себе —<br /><em>это по-мужски.</em></h2>
-        </div>
-      </section>
     </>
+  );
+}
+
+export function BrandPhilosophy() {
+  return (
+    <section className="brand-philosophy">
+      <div className="section-wrap">
+        <span className="eyebrow">ФИЛОСОФИЯ БРЕНДА</span>
+        <h2>Забота о себе —<br /><em>это по-мужски.</em></h2>
+      </div>
+    </section>
   );
 }
