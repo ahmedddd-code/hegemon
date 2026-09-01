@@ -27,7 +27,7 @@ export function AboutStory() {
             <p>Мне хотелось создать место, где мужчина чувствует себя комфортно с первого визита — без ощущения салона красоты и без стеснения говорить о деликатных вопросах.</p>
             <p className="founder-story__origin">Так появился <strong>HEGEMON</strong> — пространство, созданное вокруг потребностей мужчины.</p>
             <p>Здесь мы объединили приватность, профессиональный подход и современные технологии, чтобы забота о себе стала простой и естественной частью мужской жизни.</p>
-            <footer><strong>Жанбота Алтынтогыс</strong><span>Основатель HEGEMON</span></footer>
+            <footer><strong className="founder-story__name">Жанбота Алтынтогыс</strong><span className="founder-story__role"><strong>Основатель</strong> HEGEMON</span></footer>
           </div>
         </div>
       </section>
