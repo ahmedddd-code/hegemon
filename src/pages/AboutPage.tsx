@@ -7,5 +7,5 @@ import { Testimonials } from '../components/Testimonials';
 import { TrustStrip } from '../components/TrustStrip';
 
 export function AboutPage() {
-  return <PageLayout title="О центре"><PageIntro eyebrow="О ЦЕНТРЕ" title="Создан мужчинами" accent="для мужчин." text="Приватное пространство, где забота о теле становится простой и естественной частью жизни." /><Principles /><HygieneSection /><TrustStrip /><Testimonials /><BookingCta /></PageLayout>;
+  return <PageLayout title="О центре"><PageIntro eyebrow="О ЦЕНТРЕ" title="Пространство комфорта" accent="и приватности." text="Место, где забота о теле становится простой и естественной частью жизни." /><Principles /><HygieneSection /><TrustStrip /><Testimonials /><BookingCta /></PageLayout>;
 }
