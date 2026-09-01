@@ -2,7 +2,8 @@
 .principles__content { padding:110px max(44px,calc((100vw - 1280px)/2)) 80px; padding-right:7%; }
 .section-heading h2 { margin-top:26px; }
 .principles__intro { max-width:600px; margin-top:40px; color:var(--muted); font-size:14px; line-height:1.75; }
-.principles__intro .lead { margin-bottom:14px; color:var(--ink); font-size:19px; line-height:1.5; }
+.principles__intro p+p { margin-top:14px; }
+.principles__intro .principles__tagline { margin-top:28px; padding-left:18px; border-left:1px solid var(--gold-dark); color:var(--ink); font-size:16px; line-height:1.55; }
 .principles__grid { display:grid; grid-template-columns:1fr 1fr; margin-top:50px; border-top:1px solid var(--line); }
 .principle { padding:25px 25px 20px 0; }
 .principle:nth-child(even) { padding-left:25px; border-left:1px solid var(--line); }
