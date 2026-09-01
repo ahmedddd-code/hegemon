@@ -27,10 +27,6 @@ button,a { overflow-wrap:anywhere; }
   .hero__actions .button,.hero__actions .text-link { width:100%; min-width:0; justify-content:space-between; }
   .hero__services { min-height:58px; padding-inline:18px; }
   .hero__services span { width:100%; white-space:normal; line-height:1.35; }
-  .hygiene { min-height:0; padding-block:72px; background-position:72% bottom; }
-  .hygiene__content { padding-block:0; }
-  .hygiene__benefits { margin-top:38px; padding:8px 18px; display:block; border:1px solid rgba(255,255,255,.15); background:rgba(7,19,21,.78); backdrop-filter:blur(8px); }
-  .hygiene__benefits article { padding:16px 0; }
   .footer__top { grid-template-columns:1fr 1fr; gap:30px 18px; }
   .footer__top>div:last-child { display:flex; }
   .footer__bottom { gap:16px; }

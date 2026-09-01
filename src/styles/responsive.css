@@ -20,17 +20,10 @@
   .hero__services span { flex:none; width:50%; }
   .hero__services span:last-child { display:none; }
   .hero__services span+span { padding-left:20px; }
-  .principles { grid-template-columns:1fr; }
-  .principles__content { width:min(100% - 40px,760px); margin:auto; padding:90px 0; }
-  .principles__visual { min-height:560px; }
   .services { padding-block:90px; }
   .services__heading { align-items:start; flex-direction:column; gap:28px; }
   .services__grid { grid-template-columns:1fr; }
   .service { min-height:470px; }
-  .hygiene { background-position:100% center; }
-  .hygiene__content { grid-template-columns:1fr; padding-block:90px; }
-  .hygiene__copy { max-width:650px; }
-  .hygiene__benefits { max-width:520px; margin-top:45px; }
   .trust-strip .section-wrap { width:100%; grid-template-columns:1fr 1fr; }
   .trust-strip .section-wrap>div:nth-child(3) { border-left:0; }
   .trust-strip .section-wrap>div:nth-child(n+3) { border-top:1px solid rgba(18,21,21,.12); }
@@ -85,22 +78,11 @@
   .hero .button { min-width:185px; padding:15px 18px; }
   .hero__services span { width:100%; }
   .hero__services span:nth-child(2) { display:none; }
-  .principles__content { width:calc(100% - 36px); padding:75px 0; }
-  .principles__grid { grid-template-columns:1fr; margin-top:35px; }
-  .principle,.principle:nth-child(even) { padding:25px 0; border-left:0; border-top:1px solid var(--line); }
-  .principle:first-child { border-top:0; }
-  .principles__visual { min-height:430px; }
-  .principles__visual>div { right:18px; bottom:18px; padding:22px 28px; }
   .services { padding-block:75px; }
   .services__heading { margin-bottom:38px; }
   .service { min-height:430px; padding:24px; }
   .service__body { margin-top:65px; }
   .service h3 { font-size:32px; }
-  .hygiene { min-height:760px; background-position:67% bottom; background-size:auto 83%; }
-  .hygiene::before { background:linear-gradient(180deg,#071315 0%,#071315 51%,rgba(7,19,21,.5) 76%,rgba(7,19,21,.15)); }
-  .hygiene__content { align-content:start; padding-block:75px; }
-  .hygiene__copy>p { font-size:13px; }
-  .hygiene__benefits { display:none; }
   .trust-strip strong { font-size:22px; }
   .trust-strip .section-wrap>div { padding:28px 10px; }
   .testimonials,.visit,.faq { padding-block:75px; }

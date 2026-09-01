@@ -1,22 +1,4 @@
-.principles { display:grid; grid-template-columns:1.03fr .97fr; min-height:760px; background:var(--white); }
-.principles__content { padding:110px max(44px,calc((100vw - 1280px)/2)) 80px; padding-right:7%; }
 .section-heading h2 { margin-top:26px; }
-.principles__intro { max-width:600px; margin-top:40px; color:var(--muted); font-size:14px; line-height:1.75; }
-.principles__intro p+p { margin-top:14px; }
-.principles__intro .principles__tagline { margin-top:28px; padding-left:18px; border-left:1px solid var(--gold-dark); color:var(--ink); font-size:16px; line-height:1.55; }
-.principles__grid { display:grid; grid-template-columns:1fr 1fr; margin-top:50px; border-top:1px solid var(--line); }
-.principle { padding:25px 25px 20px 0; }
-.principle:nth-child(even) { padding-left:25px; border-left:1px solid var(--line); }
-.principle:nth-child(n+3) { border-top:1px solid var(--line); }
-.principle>span,.service__number { color:var(--gold-dark); font-size:9px; letter-spacing:.16em; }
-.principle h3 { margin:22px 0 10px; font-size:15px; }
-.principle p { color:var(--muted); font-size:12px; line-height:1.65; }
-.principles__visual { position:relative; min-height:680px; background:url('/images/hegemon-hero.png') center/cover no-repeat; }
-.principles__visual::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(3,9,11,.55),transparent 55%); }
-.principles__visual>div { position:absolute; z-index:1; right:8%; bottom:8%; display:flex; flex-direction:column; align-items:center; padding:28px 42px; border:1px solid rgba(255,255,255,.35); color:#fff; backdrop-filter:blur(8px); }
-.principles__visual i { width:38px; height:42px; display:grid; place-items:center; border:1px solid var(--gold); border-radius:50%; color:var(--gold); font-family:'Prata',serif; font-style:normal; }
-.principles__visual strong { margin-top:12px; font-family:'Prata',serif; letter-spacing:.14em; }
-.principles__visual span { margin-top:7px; color:rgba(255,255,255,.55); font-size:7px; letter-spacing:.18em; }
 .services { padding-block:110px; background:var(--paper); }
 .services__heading { display:flex; align-items:end; justify-content:space-between; margin-bottom:55px; }
 .services__heading h2 { margin-top:26px; }
@@ -30,7 +12,7 @@
 .service--papilloma::before { background-image:url('/images/hegemon-hero.png'); background-position:15% center; filter:sepia(.18); }
 .service--kegel::before { background-image:url('/images/hegemon-hero.png'); background-position:67% center; }
 .service>* { position:relative; z-index:1; }
-.service__number { color:var(--gold); }
+.service__number { color:var(--gold); font-size:9px; letter-spacing:.16em; }
 .service__body { margin-top:95px; }
 .service__body p { margin-bottom:16px; color:rgba(255,255,255,.58); font-size:9px; letter-spacing:.12em; text-transform:uppercase; }
 .service h3 { font-size:35px; line-height:1.04; letter-spacing:-.04em; text-transform:uppercase; }
@@ -39,18 +21,6 @@
 .service a { margin-top:auto; padding-top:22px; border-top:1px solid rgba(255,255,255,.26); display:flex; justify-content:space-between; font-size:11px; }
 .service a span { color:var(--gold); font-size:18px; }
 .services__medical { margin-top:20px; color:#888b87; font-size:10px; }
-.hygiene { position:relative; min-height:690px; display:flex; align-items:center; color:#fff; background:#071315 url('/images/hegemon-hero-man.png') 88% center/auto 115% no-repeat; }
-.hygiene::before { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#071315 0%,#071315 46%,rgba(7,19,21,.72) 67%,rgba(7,19,21,.12)); }
-.hygiene__content { position:relative; z-index:1; display:grid; grid-template-columns:1.05fr .65fr; gap:7%; align-items:end; }
-.hygiene__copy h2 { max-width:760px; margin:25px 0 28px; }
-.hygiene__copy>p { max-width:590px; color:rgba(255,255,255,.58); font-size:14px; line-height:1.8; }
-.hygiene__copy .text-link { margin-top:30px; color:var(--gold); }
-.hygiene__benefits { padding:12px 0 12px 34px; border-left:1px solid rgba(255,255,255,.2); }
-.hygiene__benefits article { display:flex; gap:24px; padding:22px 0; border-bottom:1px solid rgba(255,255,255,.14); }
-.hygiene__benefits article:last-child { border-bottom:0; }
-.hygiene__benefits>article>span { color:var(--gold); font-size:9px; letter-spacing:.15em; }
-.hygiene__benefits h3 { margin-bottom:8px; font-size:15px; }
-.hygiene__benefits p { max-width:260px; color:rgba(255,255,255,.5); font-size:11px; line-height:1.6; }
 .trust-strip { background:#ddd6ca; }
 .trust-strip .section-wrap { display:grid; grid-template-columns:repeat(4,1fr); }
 .trust-strip .section-wrap>div { padding:36px 25px; text-align:center; }
