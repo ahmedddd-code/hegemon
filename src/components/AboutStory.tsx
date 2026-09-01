@@ -1,3 +1,5 @@
+import { Icon } from './Icon';
+
 export function AboutStory() {
   return (
     <>
@@ -17,7 +19,7 @@ export function AboutStory() {
       <section className="founder-story">
         <div className="founder-story__inner section-wrap">
           <header>
-            <span className="eyebrow eyebrow--dark">ИДЕЯ HEGEMON</span>
+            <span className="eyebrow eyebrow--dark founder-story__idea-label"><Icon name="idea" size={16}/>ИДЕЯ HEGEMON</span>
             <h2>Почему появился<br /><em>HEGEMON.</em></h2>
           </header>
           <div className="founder-story__copy">

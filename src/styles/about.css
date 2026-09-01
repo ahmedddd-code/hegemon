@@ -9,6 +9,7 @@
 .founder-story { padding-block:clamp(90px,10vw,150px); background:var(--paper); }
 .founder-story__inner { display:grid; grid-template-columns:minmax(280px,.75fr) minmax(0,1.25fr); gap:clamp(50px,9vw,145px); align-items:start; }
 .founder-story header { position:sticky; top:160px; }
+.founder-story__idea-label svg { flex:none; color:var(--gold-dark); }
 .founder-story h2 { margin-top:30px; font-size:clamp(45px,5vw,72px); }
 .founder-story__copy { max-width:760px; }
 .founder-story__copy>p { color:#4f5351; font-size:clamp(15px,1.3vw,18px); line-height:1.85; }
