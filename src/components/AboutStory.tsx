@@ -5,8 +5,11 @@ export function AboutStory() {
     <>
       <section className="about-overview">
         <div className="about-overview__inner section-wrap">
-          <div className="about-overview__visual" role="img" aria-label="Приватное пространство мужского центра HEGEMON">
-            <span>H</span>
+          <div className="about-overview__visual">
+            <img className="about-overview__photo" src="/images/hegemon-hero.png" alt="Интерьер пространства HEGEMON" />
+            <span className="about-overview__mark">
+              <img src="/images/hegemon-mark-transparent.png" alt="Логотип HEGEMON" />
+            </span>
           </div>
           <div className="about-overview__copy">
             <span className="eyebrow eyebrow--dark">ПРОСТРАНСТВО HEGEMON</span>
