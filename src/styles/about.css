@@ -3,8 +3,6 @@
 .about-overview__visual { position:relative; min-height:520px; display:grid; place-items:center; overflow:hidden; background:#0a1517; }
 .about-overview__photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
 .about-overview__visual::after { content:''; position:absolute; z-index:1; inset:0; background:linear-gradient(0deg,rgba(3,8,9,.76),transparent 42%),radial-gradient(circle at 50% 50%,transparent,rgba(0,0,0,.22) 78%); }
-.about-overview__mark { position:relative; z-index:2; width:132px; display:block; }
-.about-overview__mark img { display:block; width:100%; height:auto; filter:drop-shadow(0 10px 24px rgba(0,0,0,.55)); }
 .about-overview__copy { max-width:650px; }
 .about-overview__lead { margin:34px 0 30px; color:var(--ink); font:clamp(30px,3vw,48px)/1.42 'Prata',serif; letter-spacing:-.025em; }
 .about-overview__copy>p:last-child { max-width:560px; color:var(--muted); font-size:15px; line-height:1.8; }
@@ -52,7 +50,6 @@
   .about-overview { padding-block:70px; }
   .about-overview__inner { gap:42px; }
   .about-overview__visual { min-height:340px; }
-  .about-overview__mark { width:92px; }
   .about-overview__lead { margin-top:26px; font-size:25px; }
   .about-overview__copy>p:last-child { font-size:13px; }
   .founder-story { padding-block:75px; }
